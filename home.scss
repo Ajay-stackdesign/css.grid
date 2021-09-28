@@ -1,0 +1,42 @@
+@import "var";
+@import "mixin";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(3, 1fr);
+    //grid-row-gap: 20px;
+    //grid-column-gap: 20px;
+    grid-gap: 20px;
+    grid-auto-rows: 150px;
+    border: 2px solid black;
+    .one{
+        @include grid(black);
+    }
+    .two{
+       @include grid(rgb(56,78,89));
+       grid-column: 1/-1;
+
+    }
+    .three{
+        @include grid(rgb(89,99,89));
+    }
+    .four{
+        @include grid(blue);
+    }
+    .five{
+        @include grid(red);
+        //grid-row-start: 1; grid-row-end: 2;
+        grid-row: 1/2;//this is shorthand property of grid-row-start & end.
+        //grid-column-start: 2; grid-column-end: 4;
+        grid-column: 2/4;//this is shorthand property of grid-column-start & end
+    }
+    .six{
+        @include grid(rgba(10, 224, 57, 0.411));
+    }
+}

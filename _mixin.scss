@@ -1,0 +1,5 @@
+@mixin grid($par1) {
+    background-color: $par1;
+    color: $bg-color;
+    font-size: 20px;
+}

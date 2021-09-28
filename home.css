@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (150px)[2];
+      grid-template-rows: repeat(2, 150px);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 150px;
+  border: 2px solid black;
+}
+
+main .one {
+  background-color: black;
+  color: rgba(64, 204, 29, 0.767);
+  font-size: 20px;
+}
+
+main .two {
+  background-color: #384e59;
+  color: rgba(64, 204, 29, 0.767);
+  font-size: 20px;
+  grid-column: 1/-1;
+}
+
+main .three {
+  background-color: #596359;
+  color: rgba(64, 204, 29, 0.767);
+  font-size: 20px;
+}
+
+main .four {
+  background-color: blue;
+  color: rgba(64, 204, 29, 0.767);
+  font-size: 20px;
+}
+
+main .five {
+  background-color: red;
+  color: rgba(64, 204, 29, 0.767);
+  font-size: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+main .six {
+  background-color: rgba(10, 224, 57, 0.411);
+  color: rgba(64, 204, 29, 0.767);
+  font-size: 20px;
+}
+/*# sourceMappingURL=home.css.map */
